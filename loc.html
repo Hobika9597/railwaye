@@ -1,0 +1,85 @@
+    <html>
+        <head>
+         <script src="https://cdn.tailwindcss.com">
+         </script>
+         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+        </head>
+        <body class="bg-gradient-to-b from-cyan-400 to-blue-600 flex items-center justify-center min-h-screen">
+         <div class="bg-gray-100 w-80 rounded-lg shadow-lg p-4">
+          <!-- Back Button inside the box -->
+        <div class="absolute top-4 left-4">
+          <a href="index.html" class="text-black">
+              <i class="fas fa-arrow-left text-2xl"></i>
+          </a>
+      </div>
+          <div class="flex justify-between items-center mb-4">
+            <img alt="User profile picture" class="rounded-full" src="user.png" style="width: 50px; height: 50px;"/>
+            <i class="fas fa-cog text-2xl">
+           </i>
+          </div>
+          <div class="space-y-4">
+           <div  onclick="selectPlatform()" class="bg-gradient-to-r from-red-200 to-red-400 rounded-lg p-4 flex items-center">
+            <i class="fas fa-lightbulb text-2xl mr-4">
+            </i>
+            <span class="text-lg font-semibold">
+             Platform
+            </span>
+           </div>
+           <div  class="bg-gradient-to-r from-green-200 to-green-400 rounded-lg p-4 flex items-center">
+            <i class="fas fa-ticket-alt text-2xl mr-4">
+            </i>
+            <span class="text-lg font-semibold">
+             Ticket Counter
+            </span>
+           </div>
+           <div onclick="selectmedical()" class="bg-gradient-to-r from-purple-200 to-purple-400 rounded-lg p-4 flex items-center">
+            <i class="fas fa-medkit text-2xl mr-4">
+            </i>
+            <span class="text-lg font-semibold">
+             Nearby medical
+            </span>
+           </div>
+           <div onclick="selectemergency()" class="bg-gradient-to-r from-yellow-200 to-yellow-400 rounded-lg p-4 flex items-center">
+            <i class="fas fa-ambulance text-2xl mr-4">
+            </i>
+            <span class="text-lg font-semibold">
+             Emergency Station
+            </span>
+           </div>
+           <div onclick="selectecandiewate()" class="bg-gradient-to-r from-blue-200 to-blue-400 rounded-lg p-4 flex items-center">
+            <i class="fas fa-home text-2xl mr-4">
+            </i>
+            <span class="text-lg font-semibold">
+             CandiewateBay
+            </span>
+           </div>
+           <div class="bg-gradient-to-r from-pink-200 to-pink-400 rounded-lg p-4 flex items-center">
+            <i class="fas fa-restroom text-2xl mr-4">
+            </i>
+            <span class="text-lg font-semibold">
+             Washroom
+            </span>
+           </div>
+          </div>
+         </div>
+         <script>
+  
+          function selectPlatform() {
+            
+                  window.location.href = 'platform.html';
+              
+          }
+          function selectmedical(){
+            window.location.href = 'medical.html';
+          }
+          function selectemergency(){
+            window.location.href = 'Emergency.html';
+          }
+          function selectecandiewate(){
+            window.location.href = 'Candiewate.html';
+          }
+      </script>
+        </body>
+       </html>    
+
+
