@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
     <script src="https://cdn.tailwindcss.com"></script>
@@ -9,16 +10,16 @@
         <h1 class="text-3xl font-bold text-center mb-6" style="font-family: 'Fredoka One', cursive;">
             Welcome!
         </h1>
-        <form class="space-y-4">
-            <input class="w-full p-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-cyan-500" placeholder="Enter username" type="text" />
+        <!-- Updated form with action and method -->
+        <form class="space-y-4" action="http://localhost:5000/submit" method="post">
+            <input name="username" class="w-full p-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-cyan-500" placeholder="Enter username" type="text" />
             <div class="relative">
-                <input class="w-full p-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-cyan-500" placeholder="Password" type="password" />
+                <input name="password" class="w-full p-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-cyan-500" placeholder="Password" type="password" />
                 <a class="absolute right-3 top-3 text-sm text-gray-500" href="#">
                     Forget password
                 </a>
             </div>
-            <!-- Updated Sign In button with onclick event -->
-            <button type="button" onclick="window.location.href='lan.html';" class="w-full p-3 rounded-full bg-cyan-500 text-white font-bold text-lg hover:bg-cyan-600">
+            <button type="submit" class="w-full p-3 rounded-full bg-cyan-500 text-white font-bold text-lg hover:bg-cyan-600">
                 Sign In
             </button>
         </form>
@@ -43,6 +44,3 @@
     </div>
 </body>
 </html>
-
-
- 
